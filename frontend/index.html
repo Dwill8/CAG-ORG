@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美国国家决策智能体</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>国家决策智能体</h1>
+        </header>
+        
+        <div class="content-wrapper">
+            <aside class="sidebar">
+                <div class="nav-item active" onclick="showSection('cases')">案例库展示</div>
+                <div class="nav-item" onclick="showSection('rules')">规则库展示</div>
+                <div class="nav-item" onclick="showSection('llm')">LLM配置</div>
+                <div class="nav-item" onclick="showSection('decision')">决策运行</div>
+            </aside>
+            
+            <main class="main-content">
+            <div id="cases-section" class="section active">
+                <h2>案例库展示</h2>
+                <div class="tab-container">
+                    <button class="tab-btn active" onclick="showCaseTab('geopolitical')">地缘政治案例</button>
+                    <button class="tab-btn" onclick="showCaseTab('economic')">经贸安全案例</button>
+                </div>
+                <div id="geopolitical-tab" class="tab-content active">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>案例ID</th>
+                                <th>案例标签</th>
+                                <th>案例类型</th>
+                                <th>触发事件</th>
+                                <th>战略目标</th>
+                                <th>决策措施</th>
+                            </tr>
+                        </thead>
+                        <tbody id="geopolitical-body"></tbody>
+                    </table>
+                </div>
+                <div id="economic-tab" class="tab-content">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>案例ID</th>
+                                <th>案例标签</th>
+                                <th>案例类型</th>
+                                <th>触发事件</th>
+                                <th>战略目标</th>
+                                <th>决策措施</th>
+                            </tr>
+                        </thead>
+                        <tbody id="economic-body"></tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div id="rules-section" class="section">
+                <h2>规则库展示</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>规则ID</th>
+                            <th>规则名称</th>
+                            <th>领域</th>
+                            <th>规则类型</th>
+                            <th>法规名称</th>
+                            <th>具体法条</th>
+                            <th>违规行为</th>
+                            <th>处理方式</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rules-body"></tbody>
+                </table>
+            </div>
+            
+            <div id="llm-section" class="section">
+                <h2>LLM配置</h2>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label>API Key:</label>
+                        <input type="text" id="llm-api-key" placeholder="请输入API Key">
+                    </div>
+                    <div class="form-group">
+                        <label>API URL:</label>
+                        <input type="text" id="llm-api-url" value="https://open.bigmodel.cn/api/paas/v4/chat/completions">
+                    </div>
+                    <div class="form-group">
+                        <label>模型:</label>
+                        <input type="text" id="llm-model" value="glm-4">
+                    </div>
+                    <div class="form-group">
+                        <label>温度:</label>
+                        <input type="number" id="llm-temperature" value="0.7" step="0.1">
+                    </div>
+                    <button class="btn btn-primary" onclick="saveLLMConfig()">保存配置</button>
+                    <button class="btn btn-secondary" onclick="loadLLMConfig()">刷新配置</button>
+                </div>
+                <div id="llm-status" class="status-message"></div>
+            </div>
+            
+            <div id="decision-section" class="section">
+                <h2>决策运行</h2>
+                
+                <div class="step-card">
+                    <h3>步骤一：事件输入</h3>
+                    <textarea id="event-input" placeholder="请输入事件描述..." rows="4"></textarea>
+                    <button class="btn btn-primary" onclick="parseEvent()">解析事件</button>
+                </div>
+                
+                <div class="step-card">
+                    <h3>步骤二：事件解析结果</h3>
+                    <div id="event-result" class="result-container"></div>
+                </div>
+                
+                <div class="step-card">
+                    <h3>步骤三：相似案例检索</h3>
+                    <button class="btn btn-primary" onclick="searchCases()">检索相似案例</button>
+                    <div id="search-result" class="result-container"></div>
+                </div>
+                
+                <div class="step-card">
+                    <h3>步骤四：CAG泛化推理</h3>
+                    <button class="btn btn-primary" onclick="generateMeasures()">生成初始措施</button>
+                    <div id="measures-result" class="result-container"></div>
+                </div>
+                
+                <div class="step-card">
+                    <h3>步骤五：ORG校验</h3>
+                    <button class="btn btn-primary" onclick="checkORG()">ORG校验</button>
+                    <div id="org-result" class="result-container"></div>
+                </div>
+            </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

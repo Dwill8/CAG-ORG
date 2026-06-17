@@ -1,0 +1,547 @@
+[
+  {
+    "case_id": "USA-202202-EC01",
+    "case_label": "Case01｜USA-202202-EC01",
+    "case_category": "经贸安全",
+    "case_type": "经济贸易 + 危机处置（对俄金融制裁）",
+    "state_subject": "USA",
+    "trigger_event": "2022年2月，俄罗斯对乌克兰发动全面军事行动，美国及盟友启动大规模金融制裁。",
+    "event_date": "2022年2月",
+    "background": "美国避免与俄罗斯直接军事冲突，转向金融制裁、资产冻结和盟友协调削弱俄罗斯战争能力。",
+    "stakeholders": [
+      "美国",
+      "俄罗斯",
+      "乌克兰",
+      "欧盟",
+      "G7",
+      "全球金融机构"
+    ],
+    "strategic_goal": "冻结俄罗斯关键金融资源，削弱战争融资能力，维护北约和G7制裁统一阵线。",
+    "decision_measures": [
+      "冻结俄罗斯央行部分外汇储备",
+      "制裁俄罗斯主要银行",
+      "限制美元交易",
+      "协调盟友将部分俄银行排除出SWIFT",
+      "成立REPO工作组追踪冻结资产"
+    ],
+    "constraints": [
+      "BL-US-EC01",
+      "BL-US-EC03",
+      "BL-US-EC04",
+      "SR-US-EC01"
+    ],
+    "outcome": "俄罗斯金融体系短期剧烈承压，卢布和资本市场受冲击；但俄罗斯通过资本管制、能源收入和替代结算维持基本运转。",
+    "key_lesson": [
+      "金融制裁打击快",
+      "威慑强",
+      "但必须盟友同步",
+      "并预判目标方规避和替代支付路径"
+    ],
+    "similar_tag": [
+      "对俄制裁",
+      "央行资产冻结",
+      "SWIFT",
+      "金融武器化",
+      "盟友协同"
+    ],
+    "fail_tag": false,
+    "source_note": "U.S. Treasury Russia Sanctions；White House Russia Costs Fact Sheet",
+    "source_url": [
+      "U.S. Treasury Russia Sanctions",
+      "White House Russia Costs Fact Sheet"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202202-EC02",
+    "case_label": "Case02｜USA-202202-EC02",
+    "case_category": "经贸安全",
+    "case_type": "经济贸易 + 科技竞争（对俄出口管制）",
+    "state_subject": "USA",
+    "trigger_event": "2022年2月，俄乌冲突爆发后，美国商务部BIS对俄罗斯实施大规模出口管制。",
+    "event_date": "2022年2月",
+    "background": "俄罗斯军事工业依赖部分西方半导体、航空、传感器、软件和高端设备；美国希望通过技术断供削弱俄长期军工能力。",
+    "stakeholders": [
+      "美国",
+      "俄罗斯",
+      "欧盟",
+      "日本",
+      "韩国",
+      "全球科技企业"
+    ],
+    "strategic_goal": "限制俄罗斯获取先进技术和军民两用产品，削弱其航空、国防、海事和高技术产业能力。",
+    "decision_measures": [
+      "扩大EAR管辖范围",
+      "对俄实施外国直接产品规则",
+      "限制半导体",
+      "航空航天",
+      "加密",
+      "传感器等出口",
+      "推动盟友同步管制"
+    ],
+    "constraints": [
+      "BL-US-EC01",
+      "BL-US-EC02",
+      "BL-US-EC03",
+      "SR-US-EC01"
+    ],
+    "outcome": "俄罗斯高技术进口受限，军工和航空维修成本上升；但通过第三国转运和库存消耗形成规避。",
+    "key_lesson": [
+      "出口管制适合长期削弱目标方能力",
+      "但需要持续执法",
+      "第三国监测和盟友一致行动"
+    ],
+    "similar_tag": [
+      "俄罗斯",
+      "出口管制",
+      "军民两用",
+      "外国直接产品规则",
+      "技术断供"
+    ],
+    "fail_tag": false,
+    "source_note": "BIS Russia Export Controls；Federal Register Russia Export Controls, 2022",
+    "source_url": [
+      "BIS Russia Export Controls",
+      "Federal Register Russia Export Controls, 2022"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202212-EC03",
+    "case_label": "Case03｜USA-202212-EC03",
+    "case_category": "经贸安全",
+    "case_type": "经济贸易 + 危机处置（G7俄油价格上限）",
+    "state_subject": "USA",
+    "trigger_event": "2022年12月，G7、欧盟和澳大利亚对俄罗斯海运原油实施价格上限机制。",
+    "event_date": "2022年12月",
+    "background": "俄乌冲突推高能源安全压力；美国既要削弱俄罗斯能源收入，又要避免全球油价失控。",
+    "stakeholders": [
+      "美国",
+      "俄罗斯",
+      "G7",
+      "欧盟",
+      "澳大利亚",
+      "航运保险企业",
+      "全球能源市场"
+    ],
+    "strategic_goal": "压低俄罗斯石油收入，同时维持全球石油供应，避免能源价格冲击美国和盟友经济。",
+    "decision_measures": [
+      "设定俄海运原油价格上限",
+      "限制保险",
+      "航运",
+      "融资等服务",
+      "发布OFAC合规指引",
+      "后续加强对规避和“影子船队”的执法"
+    ],
+    "constraints": [
+      "BL-US-EC01",
+      "BL-US-EC03",
+      "BL-US-EC04",
+      "SR-US-EC01"
+    ],
+    "outcome": "短期压低俄油折价收入并维持供应，但俄罗斯发展影子船队、转向亚洲买家，执行成本上升。",
+    "key_lesson": [
+      "能源制裁不能简单禁运",
+      "需用“限价+服务控制+市场稳定”组合",
+      "避免制裁方被油价反噬"
+    ],
+    "similar_tag": [
+      "俄油",
+      "价格上限",
+      "能源制裁",
+      "航运保险",
+      "市场稳定"
+    ],
+    "fail_tag": false,
+    "source_note": "U.S. Treasury Russian Oil Price Cap；G7 Statement on Russian Oil Price Cap",
+    "source_url": [
+      "U.S. Treasury Russian Oil Price Cap",
+      "G7 Statement on Russian Oil Price Cap"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202210-EC04",
+    "case_label": "Case04｜USA-202210-EC04",
+    "case_category": "经贸安全",
+    "case_type": "科技竞争 + 经济贸易（对华先进计算与半导体出口管制）",
+    "state_subject": "USA",
+    "trigger_event": "2022年10月7日，美国商务部BIS发布针对中国先进计算芯片和半导体制造设备的出口管制规则。",
+    "event_date": "2022年10月7日",
+    "background": "美国将AI、超算和先进半导体视为军事、情报和技术竞争核心；中国高端芯片和设备环节仍依赖美国及盟友技术。",
+    "stakeholders": [
+      "美国",
+      "中国",
+      "日本",
+      "荷兰",
+      "韩国",
+      "台湾地区",
+      "全球半导体企业"
+    ],
+    "strategic_goal": "限制中国先进计算、AI训练、超算和先进制程制造能力，延缓其军民两用技术突破。",
+    "decision_measures": [
+      "限制先进计算芯片出口",
+      "限制半导体制造设备",
+      "扩大外国直接产品规则",
+      "限制美国人员支持中国先进晶圆厂",
+      "后续在2023",
+      "2024年继续更新规则"
+    ],
+    "constraints": [
+      "BL-US-EC01",
+      "BL-US-EC02",
+      "BL-US-EC03",
+      "SR-US-EC01"
+    ],
+    "outcome": "中国高端AI芯片和先进制程受压，美国企业失去部分中国市场；中国加速国产替代和第三方采购。",
+    "key_lesson": [
+      "控制关键技术节点比全面贸易封锁更精准",
+      "但会刺激目标方自主替代并压缩美国企业商业收益"
+    ],
+    "similar_tag": [
+      "半导体",
+      "AI芯片",
+      "出口管制",
+      "中国",
+      "BIS",
+      "先进计算"
+    ],
+    "fail_tag": false,
+    "source_note": "BIS Advanced Computing and Semiconductor Controls；Federal Register BIS Advanced Computing Rule, Oct. 2022",
+    "source_url": [
+      "BIS Advanced Computing and Semiconductor Controls",
+      "Federal Register BIS Advanced Computing Rule, Oct. 2022"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202309-EC05",
+    "case_label": "Case05｜USA-202309-EC05",
+    "case_category": "经贸安全",
+    "case_type": "科技竞争 + 经济贸易（CHIPS法案护栏规则）",
+    "state_subject": "USA",
+    "trigger_event": "2023年9月，美国商务部发布CHIPS and Science Act资金“护栏”最终规则，限制受补贴企业在中国等关注国家扩张先进产能。",
+    "event_date": "2023年9月",
+    "background": "美国以产业补贴推动半导体制造回流，同时担心补贴间接增强中国等竞争对手能力。",
+    "stakeholders": [
+      "美国",
+      "芯片制造企业",
+      "中国",
+      "韩国",
+      "台湾地区",
+      "日本",
+      "欧盟"
+    ],
+    "strategic_goal": "以财政补贴重建美国半导体制造能力，同时防止受资助企业向竞争对手转移先进技术和产能。",
+    "decision_measures": [
+      "提供CHIPS补贴和税收激励",
+      "要求受资助企业十年内不得在关注国家实质性扩张先进半导体产能",
+      "限制与受关注实体开展敏感联合研究"
+    ],
+    "constraints": [
+      "RL-US-EC01",
+      "BL-US-EC01",
+      "BL-US-EC02",
+      "BL-US-EC03",
+      "SR-US-EC01"
+    ],
+    "outcome": "美国吸引大量半导体投资，但企业全球布局受限，盟友企业需要在美国补贴与中国市场之间权衡。",
+    "key_lesson": [
+      "产业补贴必须配套安全护栏",
+      "否则财政工具可能反向增强竞争对手能力"
+    ],
+    "similar_tag": [
+      "CHIPS法案",
+      "半导体补贴",
+      "护栏规则",
+      "制造回流",
+      "关注国家"
+    ],
+    "fail_tag": false,
+    "source_note": "NIST CHIPS Act Guardrails；U.S. Commerce CHIPS Guardrails Final Rule",
+    "source_url": [
+      "NIST CHIPS Act Guardrails",
+      "U.S. Commerce CHIPS Guardrails Final Rule"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202308-EC06",
+    "case_label": "Case06｜USA-202308-EC06",
+    "case_category": "经贸安全",
+    "case_type": "科技竞争 + 经济贸易（对华高技术对外投资限制）",
+    "state_subject": "USA",
+    "trigger_event": "2023年8月，美国发布关于限制对外投资的行政令，针对中国半导体、量子信息和AI等敏感领域；2024年财政部发布最终规则。",
+    "event_date": "2023年8月",
+    "background": "美国认为单纯限制出口不足以防止资本、管理经验和技术网络支持中国敏感能力发展。",
+    "stakeholders": [
+      "美国",
+      "中国",
+      "美国投资机构",
+      "科技企业",
+      "私募基金",
+      "盟友监管机构"
+    ],
+    "strategic_goal": "阻断美国资本和专业能力帮助中国发展可能用于军事、情报、网络能力的关键技术。",
+    "decision_measures": [
+      "建立对外投资限制和申报制度",
+      "禁止或要求申报美国主体在中国半导体",
+      "量子",
+      "AI等领域的特定交易",
+      "赋予财政部监管和处罚权"
+    ],
+    "constraints": [
+      "RL-US-EC01",
+      "BL-US-EC01",
+      "BL-US-EC02",
+      "SR-US-EC01"
+    ],
+    "outcome": "美国资本流向中国敏感科技领域受限；投资机构合规成本上升；中国批评其破坏正常投资秩序。",
+    "key_lesson": [
+      "资本流动也可成为安全管制对象",
+      "但制度设计需精准",
+      "避免过度抑制正常商业投资"
+    ],
+    "similar_tag": [
+      "对外投资",
+      "半导体",
+      "量子",
+      "AI",
+      "中国",
+      "资本安全化"
+    ],
+    "fail_tag": false,
+    "source_note": "White House Executive Order on Outbound Investment；U.S. Treasury Outbound Investment Program",
+    "source_url": [
+      "White House Executive Order on Outbound Investment",
+      "U.S. Treasury Outbound Investment Program"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202404-EC07",
+    "case_label": "Case07｜USA-202404-EC07",
+    "case_category": "经贸安全",
+    "case_type": "经济贸易 + 科技竞争（TikTok剥离或禁用法案）",
+    "state_subject": "USA",
+    "trigger_event": "2024年4月，美国《保护美国人免受外国对手控制应用程序侵害法》生效，要求TikTok满足剥离条件，否则面临美国市场禁用。",
+    "event_date": "2024年4月",
+    "background": "美国长期担忧TikTok数据安全、算法影响力和外部认知操纵风险；同时面临言论自由和商业权益争议。",
+    "stakeholders": [
+      "美国",
+      "ByteDance/TikTok",
+      "中国",
+      "美国用户",
+      "应用商店",
+      "云服务商",
+      "美国国会和法院"
+    ],
+    "strategic_goal": "降低外国对手对美国用户数据、信息传播和社会认知空间的潜在控制能力。",
+    "decision_measures": [
+      "通过联邦法律要求外资控制应用完成合格剥离",
+      "限制应用商店和网络托管服务继续分发或维护不合规应用",
+      "应对企业司法挑战"
+    ],
+    "constraints": [
+      "RL-US-EC01",
+      "BL-US-EC01",
+      "BL-US-EC02",
+      "SR-US-EC01"
+    ],
+    "outcome": "TikTok在美经营面临重大法律不确定性；数字平台安全化成为美国经贸安全政策核心议题。",
+    "key_lesson": [
+      "数字平台不再只是商业资产",
+      "数据",
+      "算法和舆论影响力会被纳入国家安全审查"
+    ],
+    "similar_tag": [
+      "TikTok",
+      "数据安全",
+      "平台治理",
+      "剥离",
+      "外国对手应用"
+    ],
+    "fail_tag": false,
+    "source_note": "Congress.gov H.R.815 / Foreign Adversary Controlled Applications Act；White House Statement on National Security Supplemental Package, Apr. 2024",
+    "source_url": [
+      "Congress.gov H.R.815 / Foreign Adversary Controlled Applications Act",
+      "White House Statement on National Security Supplemental Package, Apr. 2024"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202405-EC08",
+    "case_label": "Case08｜USA-202405-EC08",
+    "case_category": "经贸安全",
+    "case_type": "经济贸易 + 科技竞争（对华301关税上调）",
+    "state_subject": "USA",
+    "trigger_event": "2024年5月，美国宣布在301审查基础上提高对中国电动车、锂电池、太阳能电池、半导体、钢铝、关键矿产等产品关税。",
+    "event_date": "2024年5月",
+    "background": "中国新能源和制造业出口竞争力增强，美国担心低价产品冲击本土制造和绿色产业政策效果。",
+    "stakeholders": [
+      "美国",
+      "中国",
+      "美国制造业",
+      "消费者",
+      "汽车和新能源企业",
+      "盟友经济体"
+    ],
+    "strategic_goal": "保护美国战略制造业和绿色产业，抵消中国补贴优势，维护国内产业政策空间。",
+    "decision_measures": [
+      "将中国电动车关税提高至100%",
+      "提高太阳能电池",
+      "半导体",
+      "锂电池",
+      "部分钢铝和关键矿产关税",
+      "继续使用301工具施压"
+    ],
+    "constraints": [
+      "RL-US-EC01",
+      "BL-US-EC01",
+      "BL-US-EC02",
+      "SR-US-EC01"
+    ],
+    "outcome": "中国相关产品进入美国市场成本上升；美国本土产业获得保护，但消费者成本、盟友转口和贸易报复风险上升。",
+    "key_lesson": [
+      "关税可快速保护本国产业",
+      "但长期有效性取决于本土产能建设和替代供应链成熟度"
+    ],
+    "similar_tag": [
+      "301关税",
+      "电动车",
+      "锂电池",
+      "太阳能",
+      "半导体",
+      "中国制造"
+    ],
+    "fail_tag": false,
+    "source_note": "White House Section 301 Tariff Fact Sheet, May 2024；USTR Four-Year Review of Section 301",
+    "source_url": [
+      "White House Section 301 Tariff Fact Sheet, May 2024",
+      "USTR Four-Year Review of Section 301"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202402-EC09",
+    "case_label": "Case09｜USA-202402-EC09",
+    "case_category": "经贸安全",
+    "case_type": "经济贸易 + 危机处置（港口网络安全与中国制造岸桥风险）",
+    "state_subject": "USA",
+    "trigger_event": "2024年2月，美国发布港口和海事网络安全行政措施，重点关注中国制造港口起重机和关键物流基础设施风险。",
+    "event_date": "2024年2月",
+    "background": "美国港口大量使用外国制造岸桥设备；关键基础设施网络安全与供应链安全被纳入国家安全议程。",
+    "stakeholders": [
+      "美国",
+      "中国制造商",
+      "美国港口运营商",
+      "海岸警卫队",
+      "航运企业",
+      "物流供应链"
+    ],
+    "strategic_goal": "降低外国对手通过港口设备获取数据、干扰物流或破坏关键基础设施的风险。",
+    "decision_measures": [
+      "授权美国海岸警卫队提出港口网络安全要求",
+      "推动对中国制造岸桥实施网络安全指令",
+      "加强港口设备审查和本土替代制造计划"
+    ],
+    "constraints": [
+      "BL-US-EC01",
+      "BL-US-EC02",
+      "SR-US-EC01"
+    ],
+    "outcome": "港口网络安全监管加强，运营商合规成本上升；物流基础设施安全化趋势明显。",
+    "key_lesson": [
+      "经贸安全对象已从商品扩展到“设备+软件+数据+运维”的基础设施全链条"
+    ],
+    "similar_tag": [
+      "港口",
+      "岸桥",
+      "网络安全",
+      "中国制造",
+      "关键基础设施",
+      "供应链安全"
+    ],
+    "fail_tag": false,
+    "source_note": "White House Port Cybersecurity Fact Sheet；U.S. Coast Guard Maritime Cybersecurity Directives",
+    "source_url": [
+      "White House Port Cybersecurity Fact Sheet",
+      "U.S. Coast Guard Maritime Cybersecurity Directives"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202409-EC10",
+    "case_label": "Case10｜USA-202409-EC10",
+    "case_category": "经贸安全",
+    "case_type": "经济贸易 + 科技竞争（联网汽车供应链安全审查）",
+    "state_subject": "USA",
+    "trigger_event": "2024年9月，美国商务部提出限制中国和俄罗斯相关联网汽车软硬件进入美国市场的规则；2025年进一步形成实施规则。",
+    "event_date": "2024年9月",
+    "background": "联网汽车可持续收集位置、道路、驾驶和个人数据，并具备远程更新和控制能力；美国担忧外国对手通过汽车供应链获取敏感数据或干扰交通系统。",
+    "stakeholders": [
+      "美国",
+      "中国",
+      "俄罗斯",
+      "汽车制造商",
+      "软件供应商",
+      "美国消费者",
+      "供应链企业"
+    ],
+    "strategic_goal": "防止外国对手控制或影响美国联网汽车数据、软件、传感器和自动驾驶系统，保护汽车产业和交通基础设施安全。",
+    "decision_measures": [
+      "基于ICTS权限审查联网汽车供应链",
+      "限制来自中国",
+      "俄罗斯的特定VCS和ADS软硬件",
+      "要求企业进行合规认证和供应链替换"
+    ],
+    "constraints": [
+      "BL-US-EC01",
+      "BL-US-EC02",
+      "SR-US-EC01"
+    ],
+    "outcome": "美国汽车供应链安全要求显著提高；跨国车企面临软件、硬件和供应商重组压力；执行上存在代码来源和复杂供应链识别难题。",
+    "key_lesson": [
+      "智能化产品安全审查必须穿透到软件",
+      "硬件",
+      "数据流和远程更新机制",
+      "仅看整车产地不足以控险"
+    ],
+    "similar_tag": [
+      "联网汽车",
+      "自动驾驶",
+      "ICTS",
+      "中国",
+      "俄罗斯",
+      "数据安全",
+      "供应链审查"
+    ],
+    "fail_tag": false,
+    "source_note": "U.S. Commerce Connected Vehicles Rule；BIS ICTS Connected Vehicles",
+    "source_url": [
+      "U.S. Commerce Connected Vehicles Rule",
+      "BIS ICTS Connected Vehicles"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  }
+]

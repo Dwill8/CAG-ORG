@@ -1,0 +1,548 @@
+[
+  {
+    "case_id": "USA-202108-GP01",
+    "case_label": "Case01｜USA-202108-GP01",
+    "case_category": "地缘政治",
+    "case_type": "危机处置 + 地缘冲突（阿富汗撤军与喀布尔撤离）",
+    "state_subject": "USA",
+    "trigger_event": "2021年8月，塔利班快速攻占喀布尔，美国启动大规模撤侨与盟友人员转移。",
+    "event_date": "2021年8月",
+    "background": "美国结束二十年阿富汗战争，国内反战情绪强；阿富汗政府迅速崩溃，机场成为唯一撤离通道。",
+    "stakeholders": [
+      "美国",
+      "塔利班",
+      "阿富汗前政府",
+      "北约盟友",
+      "美国公民",
+      "阿富汗合作人员"
+    ],
+    "strategic_goal": "结束长期地面战争，降低海外驻军成本，撤出美国人员和核心盟友人员，避免重新陷入大规模作战。",
+    "decision_measures": [
+      "执行撤军时间表",
+      "向喀布尔机场临时增派部队保障撤离",
+      "启动Operation Allies Refuge",
+      "与塔利班进行有限安全协调",
+      "使用军机和民航资源转运人员"
+    ],
+    "constraints": [
+      "RL-US-001",
+      "BL-US-002",
+      "BL-US-004",
+      "SR-US-001"
+    ],
+    "outcome": "美国完成撤军并转移大量人员，但机场混乱、恐袭伤亡和盟友信任受损明显。",
+    "key_lesson": [
+      "结束长期战争符合低成本战略",
+      "但撤离窗口",
+      "情报判断",
+      "盟友安置和机场安全必须前置"
+    ],
+    "similar_tag": [
+      "撤军",
+      "非战斗撤离",
+      "盟友安置",
+      "长期战争收缩",
+      "失败复盘"
+    ],
+    "fail_tag": true,
+    "source_note": "U.S. State Department Afghanistan After Action Review；White House Remarks on Afghanistan Evacuation, Aug. 2021",
+    "source_url": [
+      "U.S. State Department Afghanistan After Action Review",
+      "White House Remarks on Afghanistan Evacuation, Aug. 2021"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202109-GP02",
+    "case_label": "Case02｜USA-202109-GP02",
+    "case_category": "地缘政治",
+    "case_type": "外交博弈 + 科技竞争 + 地缘冲突（AUKUS安全伙伴关系）",
+    "state_subject": "USA",
+    "trigger_event": "2021年9月，美国、英国、澳大利亚宣布建立AUKUS，推进核潜艇和高端军事技术合作。",
+    "event_date": "2021年9月",
+    "background": "印太竞争加剧，美国强化小多边机制；澳大利亚调整国防路线，法国潜艇合同被替代并引发盟友摩擦。",
+    "stakeholders": [
+      "美国",
+      "英国",
+      "澳大利亚",
+      "中国",
+      "法国",
+      "印太盟友"
+    ],
+    "strategic_goal": "强化印太前沿威慑，以盟友承担成本方式提升地区军事技术能力，遏制中国海上影响力。",
+    "decision_measures": [
+      "建立AUKUS框架",
+      "支持澳大利亚获得核动力潜艇能力",
+      "推进网络",
+      "AI",
+      "量子",
+      "海底能力等高端技术合作",
+      "通过外交修复与法国关系"
+    ],
+    "constraints": [
+      "BL-US-001",
+      "BL-US-002",
+      "SR-US-001"
+    ],
+    "outcome": "美国强化印太安全网络，但短期冲击美法关系，地区军备竞争压力上升。",
+    "key_lesson": [
+      "小多边高技术联盟可放大美国战略影响",
+      "但需同步管理盟友间利益损失"
+    ],
+    "similar_tag": [
+      "AUKUS",
+      "印太",
+      "核潜艇",
+      "技术联盟",
+      "盟友分摊"
+    ],
+    "fail_tag": false,
+    "source_note": "White House Joint Leaders Statement on AUKUS；U.S. Department of Defense AUKUS",
+    "source_url": [
+      "White House Joint Leaders Statement on AUKUS",
+      "U.S. Department of Defense AUKUS"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202202-GP03",
+    "case_label": "Case03｜USA-202202-GP03",
+    "case_category": "地缘政治",
+    "case_type": "地缘冲突 + 经济贸易 + 外交博弈（俄乌冲突后的美国综合应对）",
+    "state_subject": "USA",
+    "trigger_event": "2022年2月，俄罗斯对乌克兰发动全面军事行动。",
+    "event_date": "2022年2月",
+    "background": "欧洲安全秩序剧烈变化；美国国内不愿直接与俄罗斯开战，但需维护北约信誉和对俄威慑。",
+    "stakeholders": [
+      "美国",
+      "俄罗斯",
+      "乌克兰",
+      "北约",
+      "欧盟",
+      "G7",
+      "全球能源市场"
+    ],
+    "strategic_goal": "削弱俄罗斯战争能力，维护北约团结，避免美俄直接战争，以援助和制裁方式维持乌克兰抵抗。",
+    "decision_measures": [
+      "对俄实施金融",
+      "能源",
+      "技术和个人制裁",
+      "向乌克兰提供军事",
+      "情报和财政援助",
+      "强化北约东翼部署",
+      "推动G7和欧盟协调"
+    ],
+    "constraints": [
+      "RL-US-001",
+      "BL-US-001",
+      "BL-US-002",
+      "BL-US-003",
+      "SR-US-001"
+    ],
+    "outcome": "俄罗斯承受长期消耗，北约凝聚力增强；但战争长期化、财政负担和升级风险持续存在。",
+    "key_lesson": [
+      "对核大国宜采用“援助代理方 + 制裁削弱 + 联盟威慑”",
+      "避免直接参战"
+    ],
+    "similar_tag": [
+      "俄乌冲突",
+      "代理支持",
+      "对俄制裁",
+      "北约东翼",
+      "核大国规避"
+    ],
+    "fail_tag": false,
+    "source_note": "White House Fact Sheet on Costs Imposed on Russia, Feb. 24 2022；U.S. Department of State Ukraine and Russia",
+    "source_url": [
+      "White House Fact Sheet on Costs Imposed on Russia, Feb. 24 2022",
+      "U.S. Department of State Ukraine and Russia"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202208-GP04",
+    "case_label": "Case04｜USA-202208-GP04",
+    "case_category": "地缘政治",
+    "case_type": "危机处置 + 地缘冲突（佩洛西访台后的台海危机）",
+    "state_subject": "USA",
+    "trigger_event": "2022年8月，美国众议长佩洛西访问台湾后，中国在台海周边举行大规模军事演训。",
+    "event_date": "2022年8月",
+    "background": "中美战略竞争加剧；台湾问题高度敏感，美国需同时维持对台支持、盟友信心和危机管控。",
+    "stakeholders": [
+      "美国",
+      "中国",
+      "台湾地区",
+      "日本",
+      "印太盟友"
+    ],
+    "strategic_goal": "维持美国在印太信誉，避免被迫后退，同时避免中美军事冲突失控。",
+    "decision_measures": [
+      "公开重申美国政策立场",
+      "保持印太军事存在",
+      "安排美舰通过台湾海峡",
+      "与盟友沟通稳定局势",
+      "避免直接军事升级"
+    ],
+    "constraints": [
+      "BL-US-001",
+      "BL-US-002",
+      "SR-US-001"
+    ],
+    "outcome": "台海紧张升级但未爆发直接冲突；中国军事活动常态化，美国维持地区存在。",
+    "key_lesson": [
+      "高敏感主权议题中",
+      "象征性支持必须配套军事风险管控和盟友沟通"
+    ],
+    "similar_tag": [
+      "台海",
+      "危机管控",
+      "航行行动",
+      "印太威慑",
+      "中美竞争"
+    ],
+    "fail_tag": false,
+    "source_note": "Speaker Pelosi Statement on Congressional Delegation to Taiwan；U.S. Seventh Fleet Taiwan Strait Transit, Aug. 2022",
+    "source_url": [
+      "Speaker Pelosi Statement on Congressional Delegation to Taiwan",
+      "U.S. Seventh Fleet Taiwan Strait Transit, Aug. 2022"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202302-GP05",
+    "case_label": "Case05｜USA-202302-GP05",
+    "case_category": "地缘政治",
+    "case_type": "地缘冲突 + 外交博弈（美菲EDCA基地合作扩展）",
+    "state_subject": "USA",
+    "trigger_event": "2023年2月，美菲宣布新增4个EDCA合作地点，2023年4月公布具体地点。",
+    "event_date": "2023年2月",
+    "background": "南海和台海风险上升；菲律宾在马科斯政府下重新强化与美国安全合作。",
+    "stakeholders": [
+      "美国",
+      "菲律宾",
+      "中国",
+      "日本",
+      "澳大利亚",
+      "东盟"
+    ],
+    "strategic_goal": "恢复和扩展美国在第一岛链的前沿支点，提升台海和南海危机响应能力，由盟友承担部分地理和政治成本。",
+    "decision_measures": [
+      "新增EDCA合作地点",
+      "扩大联合演训",
+      "支持菲律宾海上安全能力",
+      "加强美日菲安全协调"
+    ],
+    "constraints": [
+      "BL-US-001",
+      "BL-US-002",
+      "SR-US-001"
+    ],
+    "outcome": "美国印太前沿部署弹性增强；菲律宾国内和地区对“卷入大国冲突”的担忧上升。",
+    "key_lesson": [
+      "前沿基地网络能提升威慑",
+      "但需管理东道国国内政治和升级暴露风险"
+    ],
+    "similar_tag": [
+      "菲律宾",
+      "EDCA",
+      "南海",
+      "台海",
+      "前沿部署",
+      "盟友分摊"
+    ],
+    "fail_tag": false,
+    "source_note": "White House Fact Sheet on U.S.-Philippines EDCA New Sites；U.S. Department of Defense EDCA Announcement",
+    "source_url": [
+      "White House Fact Sheet on U.S.-Philippines EDCA New Sites",
+      "U.S. Department of Defense EDCA Announcement"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202304-GP06",
+    "case_label": "Case06｜USA-202304-GP06",
+    "case_category": "地缘政治",
+    "case_type": "外交博弈 + 地缘冲突（芬兰、瑞典加入北约）",
+    "state_subject": "USA",
+    "trigger_event": "2022年5月芬兰、瑞典申请加入北约；芬兰2023年4月入约，瑞典2024年3月入约。",
+    "event_date": "2022年5月",
+    "background": "俄罗斯对乌行动改变北欧安全认知；美国希望强化欧洲威慑，但避免独自增加欧洲防务成本。",
+    "stakeholders": [
+      "美国",
+      "芬兰",
+      "瑞典",
+      "北约",
+      "俄罗斯",
+      "土耳其",
+      "匈牙利"
+    ],
+    "strategic_goal": "扩大北约防御纵深，强化欧洲北翼威慑，同时推动欧洲盟友承担更多防务责任。",
+    "decision_measures": [
+      "支持北约开放政策",
+      "推动盟友批准入约",
+      "协调土耳其",
+      "匈牙利等成员国关切",
+      "组织北欧防务整合和联合演训"
+    ],
+    "constraints": [
+      "BL-US-001",
+      "BL-US-002",
+      "SR-US-001"
+    ],
+    "outcome": "北约北翼显著增强，波罗的海安全结构改变；俄罗斯与北约边界扩大，长期对抗风险上升。",
+    "key_lesson": [
+      "对手行动可能触发联盟反向扩张",
+      "制度吸纳是低成本扩大战略纵深的工具"
+    ],
+    "similar_tag": [
+      "北约扩员",
+      "芬兰",
+      "瑞典",
+      "俄罗斯",
+      "联盟扩张",
+      "欧洲安全"
+    ],
+    "fail_tag": false,
+    "source_note": "NATO Member Countries；White House Statement on Finland Joining NATO",
+    "source_url": [
+      "NATO Member Countries",
+      "White House Statement on Finland Joining NATO"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202310-GP07",
+    "case_label": "Case07｜USA-202310-GP07",
+    "case_category": "地缘政治",
+    "case_type": "地缘冲突 + 危机处置（哈马斯袭击以色列与加沙战争）",
+    "state_subject": "USA",
+    "trigger_event": "2023年10月7日，哈马斯对以色列发动大规模袭击，以色列随后在加沙展开军事行动。",
+    "event_date": "2023年10月7日",
+    "background": "美国长期支持以色列，但加沙人道危机引发全球舆论和美国国内政治压力；中东局势外溢至红海、黎巴嫩、伊朗方向。",
+    "stakeholders": [
+      "美国",
+      "以色列",
+      "哈马斯",
+      "巴勒斯坦平民",
+      "埃及",
+      "卡塔尔",
+      "伊朗",
+      "联合国",
+      "全球舆论"
+    ],
+    "strategic_goal": "支持以色列安全，营救人质，防止地区战争扩大，同时控制人道和舆论代价。",
+    "decision_measures": [
+      "向以色列提供军事和情报支持",
+      "派遣航母打击群威慑外部势力",
+      "推动人道援助通道和临时停火",
+      "通过卡塔尔",
+      "埃及等进行人质谈判"
+    ],
+    "constraints": [
+      "BL-US-001",
+      "BL-US-003",
+      "BL-US-004",
+      "SR-US-001"
+    ],
+    "outcome": "美国维持对以色列支持并压制部分外溢风险，但国际舆论、人道压力和国内政治撕裂加剧。",
+    "key_lesson": [
+      "盟友安全承诺必须与人道底线和地区升级控制同步",
+      "否则战略合法性成本迅速上升"
+    ],
+    "similar_tag": [
+      "以色列",
+      "加沙",
+      "人质危机",
+      "航母威慑",
+      "人道援助",
+      "舆论压力"
+    ],
+    "fail_tag": false,
+    "source_note": "White House Statement on Hamas Attacks, Oct. 7 2023；U.S. Department of State Israel-Hamas Conflict",
+    "source_url": [
+      "White House Statement on Hamas Attacks, Oct. 7 2023",
+      "U.S. Department of State Israel-Hamas Conflict"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202312-GP08",
+    "case_label": "Case08｜USA-202312-GP08",
+    "case_category": "地缘政治",
+    "case_type": "危机处置 + 地缘冲突（红海航运危机与Operation Prosperity Guardian）",
+    "state_subject": "USA",
+    "trigger_event": "2023年12月，胡塞武装持续袭击红海商业航运，美国宣布组建多国海上安全行动。",
+    "event_date": "2023年12月",
+    "background": "加沙战争外溢至红海；红海—苏伊士航线关系全球贸易和能源运输，美国需保护航道但避免深陷也门战争。",
+    "stakeholders": [
+      "美国",
+      "胡塞武装",
+      "英国",
+      "巴林",
+      "多国海军",
+      "以色列",
+      "航运企业",
+      "全球贸易市场"
+    ],
+    "strategic_goal": "保护红海航运自由，威慑胡塞袭击，维持能源和贸易通道，不扩大为大规模地面介入。",
+    "decision_measures": [
+      "建立Operation Prosperity Guardian",
+      "部署海军护航并拦截无人机",
+      "导弹",
+      "对胡塞军事目标实施有限打击",
+      "联合盟友分担海上安全任务"
+    ],
+    "constraints": [
+      "RL-US-001",
+      "BL-US-002",
+      "BL-US-003",
+      "BL-US-004",
+      "SR-US-001"
+    ],
+    "outcome": "部分航运安全得到保护，但胡塞能力和袭击意愿未被彻底消除，航运绕行和保险成本持续。",
+    "key_lesson": [
+      "海上通道危机宜采用“护航 + 精准打击 + 多国分摊”",
+      "避免转化为陆上战争"
+    ],
+    "similar_tag": [
+      "红海",
+      "胡塞",
+      "航运通道",
+      "护航",
+      "有限打击",
+      "能源贸易"
+    ],
+    "fail_tag": false,
+    "source_note": "U.S. Department of Defense: Operation Prosperity Guardian；U.S. Central Command Red Sea Updates",
+    "source_url": [
+      "U.S. Department of Defense: Operation Prosperity Guardian",
+      "U.S. Central Command Red Sea Updates"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202404-GP09",
+    "case_label": "Case09｜USA-202404-GP09",
+    "case_category": "地缘政治",
+    "case_type": "危机处置 + 地缘冲突（伊朗直接攻击以色列后的美国防空支援）",
+    "state_subject": "USA",
+    "trigger_event": "2024年4月13日至14日，伊朗向以色列发射大规模无人机、巡航导弹和弹道导弹。",
+    "event_date": "2024年4月13日",
+    "background": "以色列打击伊朗驻叙外交设施后，伊朗首次对以色列发动大规模直接攻击；美国需保护以色列但避免美伊全面战争。",
+    "stakeholders": [
+      "美国",
+      "以色列",
+      "伊朗",
+      "英国",
+      "法国",
+      "约旦",
+      "海湾国家",
+      "全球能源市场"
+    ],
+    "strategic_goal": "协助以色列拦截来袭武器，防止以色列遭受重大损失，压低以伊升级烈度，维护中东能源通道稳定。",
+    "decision_measures": [
+      "CENTCOM协调区域防空",
+      "美军飞机和舰艇拦截伊朗无人机与导弹",
+      "与英法约旦等协同防御",
+      "战后公开支持以色列同时呼吁避免进一步升级"
+    ],
+    "constraints": [
+      "BL-US-001",
+      "BL-US-003",
+      "BL-US-004",
+      "SR-US-001"
+    ],
+    "outcome": "大多数来袭武器被拦截，以色列损失有限；美伊未直接进入全面战争，但地区对抗显性化。",
+    "key_lesson": [
+      "面对地区强国导弹袭击",
+      "优先采用“联合防空 + 危机降级外交”",
+      "比直接报复更能控制升级"
+    ],
+    "similar_tag": [
+      "伊朗",
+      "以色列",
+      "导弹袭击",
+      "防空拦截",
+      "地区升级",
+      "能源通道"
+    ],
+    "fail_tag": false,
+    "source_note": "CENTCOM Statement on Iran Attack, Apr. 2024；White House Statement on Iran Attack Against Israel",
+    "source_url": [
+      "CENTCOM Statement on Iran Attack, Apr. 2024",
+      "White House Statement on Iran Attack Against Israel"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  },
+  {
+    "case_id": "USA-202407-GP10",
+    "case_label": "Case10｜USA-202407-GP10",
+    "case_category": "地缘政治",
+    "case_type": "危机处置 + 外交博弈（尼日尔政变后美军撤出）",
+    "state_subject": "USA",
+    "trigger_event": "2023年7月尼日尔发生政变，随后军政府要求外国军队撤离；美国于2024年完成从尼日尔撤军安排。",
+    "event_date": "2023年7月",
+    "background": "尼日尔曾是美国在萨赫勒反恐和无人机行动的重要支点；政变后反西方情绪上升，俄罗斯影响力扩大。",
+    "stakeholders": [
+      "美国",
+      "尼日尔军政府",
+      "法国",
+      "俄罗斯",
+      "萨赫勒地区国家",
+      "非洲联盟"
+    ],
+    "strategic_goal": "降低人员暴露风险，避免与当地军政府直接冲突，保留地区反恐和外交再布局空间。",
+    "decision_measures": [
+      "暂停部分安全合作",
+      "与尼日尔军政府谈判撤军路径",
+      "关闭或移交相关基地安排",
+      "寻求在西非其他国家重新布局反恐合作"
+    ],
+    "constraints": [
+      "RL-US-001",
+      "BL-US-002",
+      "BL-US-004",
+      "SR-US-001"
+    ],
+    "outcome": "美国降低了在尼日尔的军事暴露，但萨赫勒反恐监控能力受损，俄西影响力竞争加剧。",
+    "key_lesson": [
+      "在东道国合法性变化时",
+      "强留基地成本高",
+      "应提前准备替代支点和区域冗余布局"
+    ],
+    "similar_tag": [
+      "尼日尔",
+      "政变",
+      "基地撤离",
+      "反恐支点",
+      "非洲影响力竞争"
+    ],
+    "fail_tag": false,
+    "source_note": "U.S. Africa Command Statement on Niger Withdrawal；U.S. Department of State Niger Country Page",
+    "source_url": [
+      "U.S. Africa Command Statement on Niger Withdrawal",
+      "U.S. Department of State Niger Country Page"
+    ],
+    "source_type": "公开来源说明",
+    "source_date": "",
+    "verification_status": "pending"
+  }
+]
