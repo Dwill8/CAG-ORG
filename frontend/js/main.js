@@ -253,6 +253,18 @@ async function generateMeasures() {
     const result = await response.json();
     currentMeasures = result.measures;
     
+    // 添加测试用的固定措施
+    currentMeasures.push({
+        measure_id: 'TEST-001',
+        measure_text: '全面封锁霍尔木兹海峡',
+        reference_case: '测试案例',
+        transfer_logic: '封锁国际战略水道',
+        applicable_conditions: '国际冲突时',
+        risk_hint: '高风险',
+        possible_rules: ['RL-US-001', 'RL-US-002'],
+        confidence: 0.95
+    });
+    
     const resultDiv = document.getElementById('measures-result');
     
     let html = '<div class="summary-box">📋 ' + result.summary + '</div>';
@@ -293,55 +305,243 @@ async function generateMeasures() {
     resultDiv.innerHTML = html;
 }
 
-async function checkORG() {
+// 记录待修正措施的修正次数
+let remedyCounts = {};
+
+async function checkORG(measureIndex = null) {
+    console.log('checkORG函数开始执行');
+    
     if (!currentMeasures.length) {
         alert('请先生成初始措施');
         return;
     }
     
-    const response = await fetch(`${API_BASE}/org/check`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ measures: currentMeasures })
-    });
-    
-    const results = await response.json();
-    
     const resultDiv = document.getElementById('org-result');
+    console.log('resultDiv:', resultDiv);
     
-    let html = `
+    if (!resultDiv) {
+        console.error('无法找到org-result元素');
+        return;
+    }
+    
+    // 立即显示loading状态
+    console.log('设置loading状态');
+    resultDiv.innerHTML = `
+        <div style="display: flex; align-items: center; justify-content: center; padding: 40px; font-size: 16px; color: #4a5568; background-color: #f7fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
+            <div style="width: 24px; height: 24px; border: 3px solid #4299e1; border-top-color: transparent; border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 12px;"></div>
+            分析校验中...
+        </div>
+    `;
+    
+    // 添加动画样式
+    if (!document.getElementById('spin-style')) {
+        const style = document.createElement('style');
+        style.id = 'spin-style';
+        style.textContent = '@keyframes spin { to { transform: rotate(360deg); } }';
+        document.head.appendChild(style);
+    }
+    
+    // 强制浏览器重绘
+    await new Promise(resolve => setTimeout(resolve, 0));
+    
+    try {
+        console.log('开始调用API');
+        
+        // 如果指定了measureIndex，只校验该措施
+        const measuresToCheck = measureIndex !== null ? [currentMeasures[measureIndex]] : currentMeasures;
+        
+        const response = await fetch(`${API_BASE}/org/check`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ measures: measuresToCheck })
+        });
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        console.log('API响应成功');
+        let results = await response.json();
+        
+        // 如果只校验了单个措施，需要包装成数组
+        if (measureIndex !== null) {
+            const singleResult = results[0];
+            results = currentMeasures.map((m, idx) => {
+                if (idx === measureIndex) {
+                    return singleResult;
+                }
+                return {
+                    measure_name: m.measure_text,
+                    rule_name: '-',
+                    violation_action: '-',
+                    reasoning_chain: '-',
+                    llm_reasoning: '未重新校验',
+                    rule_type: '-',
+                    handling: '未校验',
+                    matched_rules: []
+                };
+            });
+        }
+        
+        let html = `
+            <table class="result-table">
+                <thead>
+                    <tr>
+                        <th>措施名称</th>
+                        <th>策略来源案例</th>
+                        <th>法条名称</th>
+                        <th>条款禁止内容</th>
+                        <th>推理链路</th>
+                        <th>LLM分析结果</th>
+                        <th>红线底线类型</th>
+                        <th>处理方式</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+        `;
+        
+        results.forEach((r, index) => {
+            const handlingClass = r.handling === '直接剔除' ? 'tag tag-red' : 
+                                 r.handling === '待修正' ? 'tag tag-yellow' : 'tag tag-green';
+            
+            // 获取策略来源案例ID
+            const sourceCase = currentMeasures[index]?.reference_case || '-';
+            
+            let actionBtn = '';
+            
+            // 检查是否需要显示修正按钮
+            if (r.handling === '待修正') {
+                const remedyCount = remedyCounts[currentMeasures[index]?.measure_id] || 0;
+                
+                if (remedyCount === 0 && currentSimilarCases.length >= 2) {
+                    // 第一次修正 - 使用排名第二的案例
+                    actionBtn = `<button class="btn btn-warning" onclick="remedyMeasure(${index}, 1)">第一次修正</button>`;
+                } else if (remedyCount === 1 && currentSimilarCases.length >= 3) {
+                    // 第二次修正 - 使用排名第三的案例
+                    actionBtn = `<button class="btn btn-warning" onclick="remedyMeasure(${index}, 2)">第二次修正</button>`;
+                }
+            }
+            
+            let conflictBtn = '';
+            if (r.matched_rules && r.matched_rules.length > 1) {
+                const ruleIds = r.matched_rules.map(r => r.rule_id).join(',');
+                conflictBtn = '<button class="btn btn-danger" onclick="resolveConflict(\'' + ruleIds + '\', ' + index + ')">冲突校验</button>';
+            }
+            
+            let operations = [];
+            if (actionBtn) operations.push(actionBtn);
+            if (conflictBtn) operations.push(conflictBtn);
+            
+            html += `
+                <tr>
+                    <td>${r.measure_name}</td>
+                    <td>${sourceCase}</td>
+                    <td>${r.rule_name || '-'}</td>
+                    <td>${r.violation_action || '-'}</td>
+                    <td>${r.reasoning_chain || '-'}</td>
+                    <td>${r.llm_reasoning || '-'}</td>
+                    <td><span class="${handlingClass}">${r.rule_type || '-'}</span></td>
+                    <td><span class="${handlingClass}">${r.handling}</span></td>
+                    <td>${operations.join(' ') || '-'}</td>
+                </tr>
+            `;
+        });
+        
+        html += '</tbody></table>';
+        console.log('设置结果HTML');
+        resultDiv.innerHTML = html;
+    } catch (error) {
+        console.error('ORG校验失败:', error);
+        resultDiv.innerHTML = '<div class="error">校验失败，请稍后重试</div>';
+    }
+}
+
+async function remedyMeasure(measureIndex, remedyCount) {
+    console.log(`修正措施 - 索引: ${measureIndex}, 修正次数: ${remedyCount}`);
+    
+    // 获取待修正的措施
+    const originalMeasure = currentMeasures[measureIndex];
+    
+    // 根据修正次数选择参考案例
+    // 第1次修正: 使用排名第2的案例 (索引1)
+    // 第2次修正: 使用排名第3的案例 (索引2)
+    const caseIndex = remedyCount;
+    if (caseIndex >= currentSimilarCases.length) {
+        alert('没有足够的参考案例');
+        return;
+    }
+    
+    const referenceCase = currentSimilarCases[caseIndex];
+    
+    try {
+        const response = await fetch(`${API_BASE}/cag/remedy`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                original_measure: originalMeasure,
+                reference_case: referenceCase,
+                event_features: currentEventFeatures
+            })
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            // 替换措施
+            currentMeasures[measureIndex] = result.measure;
+            
+            // 更新修正次数
+            remedyCounts[originalMeasure.measure_id] = remedyCount;
+            
+            // 只校验被替换的措施
+            await checkORG(measureIndex);
+            
+            // 更新措施展示
+            await generateMeasuresDisplay();
+        } else {
+            alert('生成修正措施失败');
+        }
+    } catch (error) {
+        console.error('生成修正措施失败:', error);
+        alert('生成修正措施失败，请稍后重试');
+    }
+}
+
+async function generateMeasuresDisplay() {
+    const resultDiv = document.getElementById('measures-result');
+    if (!resultDiv) return;
+    
+    let html = '<div class="summary-box">📋 措施列表（已更新）</div>';
+    
+    html += `
         <table class="result-table">
             <thead>
                 <tr>
-                    <th>措施名称</th>
-                    <th>法条名称</th>
-                    <th>推理链路</th>
-                    <th>红线底线类型</th>
-                    <th>处理方式</th>
-                    <th>操作</th>
+                    <th>措施ID</th>
+                    <th>措施文本</th>
+                    <th>参考案例</th>
+                    <th>迁移逻辑</th>
+                    <th>适用条件</th>
+                    <th>风险提示</th>
+                    <th>可能触发规则</th>
+                    <th>置信度</th>
                 </tr>
             </thead>
             <tbody>
     `;
     
-    results.forEach((r, index) => {
-        const handlingClass = r.handling === '直接剔除' ? 'tag tag-red' : 
-                             r.handling === '待修正' ? 'tag tag-yellow' : 'tag tag-green';
-        
-        let conflictBtn = '';
-        if (r.matched_rules && r.matched_rules.length > 1) {
-            const ruleIds = r.matched_rules.map(r => r.rule_id).join(',');
-            conflictBtn = '<button class="btn btn-danger" onclick="resolveConflict(\'' + ruleIds + '\', ' + index + ')">冲突校验</button>';
-        }
-        
+    currentMeasures.forEach(m => {
         html += `
             <tr>
-                <td>${r.measure_name}</td>
-                <td>${r.rule_name || '-'}</td>
-                <td>${r.reasoning_chain || '-'}</td>
-                <td><span class="${handlingClass}">${r.rule_type || '-'}</span></td>
-                <td><span class="${handlingClass}">${r.handling}</span></td>
-                <td>${conflictBtn || '-'}</td>
+                <td>${m.measure_id}</td>
+                <td>${m.measure_text}</td>
+                <td>${m.reference_case}</td>
+                <td>${m.transfer_logic}</td>
+                <td>${m.applicable_conditions}</td>
+                <td><span class="tag tag-red">${m.risk_hint}</span></td>
+                <td>${m.possible_rules?.join(', ') || ''}</td>
+                <td>${(m.confidence * 100).toFixed(1)}%</td>
             </tr>
         `;
     });

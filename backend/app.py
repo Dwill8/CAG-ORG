@@ -7,8 +7,12 @@ import os
 app = Flask(__name__, static_folder='../frontend', static_url_path='')
 CORS(app)
 
+# 添加UTF-8编码支持
+app.config['JSON_AS_ASCII'] = False
+
 DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'data')
 CONFIG_DIR = os.path.join(os.path.dirname(__file__), '..', 'config')
+ORIGINAL_CONFIG_DIR = CONFIG_DIR  # 添加这行
 
 def load_json_file(file_name):
     file_path = os.path.join(DATA_DIR, file_name)
@@ -30,9 +34,22 @@ def get_rules():
     rules = load_json_file('LegalRule.json')
     return jsonify(rules)
 
+def get_config_path():
+    """获取配置文件路径，优先使用用户目录"""
+    user_config_path = os.path.join(CONFIG_DIR, 'llm_config.json')
+    original_config_path = os.path.join(ORIGINAL_CONFIG_DIR, 'llm_config.json')
+    
+    # 如果用户目录没有配置文件，从原始目录复制
+    if not os.path.exists(user_config_path) and os.path.exists(original_config_path):
+        import shutil
+        shutil.copy(original_config_path, user_config_path)
+        print(f"配置文件已复制到用户目录: {user_config_path}")
+    
+    return user_config_path
+
 @app.route('/api/llm/config', methods=['GET'])
 def get_llm_config():
-    config_path = os.path.join(CONFIG_DIR, 'llm_config.json')
+    config_path = get_config_path()
     with open(config_path, 'r', encoding='utf-8') as f:
         config = json.load(f)
         config['api_key'] = '***' + config['api_key'][-4:]
@@ -40,26 +57,41 @@ def get_llm_config():
 
 @app.route('/api/llm/config', methods=['POST'])
 def update_llm_config():
-    config_path = os.path.join(CONFIG_DIR, 'llm_config.json')
+    config_path = get_config_path()
     data = request.json
     
-    with open(config_path, 'r', encoding='utf-8') as f:
-        config = json.load(f)
+    print(f"LLM配置保存请求 - 接收数据: {data}")
+    print(f"配置文件路径: {config_path}")
+    print(f"文件是否存在: {os.path.exists(config_path)}")
     
-    if 'api_key' in data:
-        config['api_key'] = data['api_key']
-    if 'api_url' in data:
-        config['api_url'] = data['api_url']
-    if 'model' in data:
-        config['model'] = data['model']
-    if 'temperature' in data:
-        config['temperature'] = data['temperature']
-    
-    with open(config_path, 'w', encoding='utf-8') as f:
-        json.dump(config, f, indent=2, ensure_ascii=False)
-    
-    config['api_key'] = '***' + config['api_key'][-4:]
-    return jsonify({'success': True, 'config': config})
+    try:
+        with open(config_path, 'r', encoding='utf-8') as f:
+            config = json.load(f)
+        print(f"读取现有配置成功: {list(config.keys())}")
+        
+        if 'api_key' in data:
+            config['api_key'] = data['api_key']
+            print(f"更新api_key: {data['api_key'][:10]}...")
+        if 'api_url' in data:
+            config['api_url'] = data['api_url']
+            print(f"更新api_url: {data['api_url']}")
+        if 'model' in data:
+            config['model'] = data['model']
+            print(f"更新model: {data['model']}")
+        if 'temperature' in data:
+            config['temperature'] = data['temperature']
+            print(f"更新temperature: {data['temperature']}")
+        
+        with open(config_path, 'w', encoding='utf-8') as f:
+            json.dump(config, f, indent=2, ensure_ascii=False)
+        print("配置文件写入成功")
+        
+        config['api_key'] = '***' + config['api_key'][-4:]
+        return jsonify({'success': True, 'config': config})
+        
+    except Exception as e:
+        print(f"配置保存失败: {str(e)}")
+        return jsonify({'success': False, 'error': str(e)})
 
 @app.route('/api/event/parse', methods=['POST'])
 def parse_event():
@@ -169,13 +201,43 @@ def generate_measures():
             'summary': '模式提取 → 差异分析 → 初始措施集已生成'
         })
 
+@app.route('/api/cag/remedy', methods=['POST'])
+def generate_remedy_measure():
+    from utils.llm_client import generate_remedy_measure
+    
+    data = request.json
+    original_measure = data.get('original_measure', {})
+    reference_case = data.get('reference_case', {})
+    event_features = data.get('event_features', {})
+    
+    print(f"生成修正措施请求 - 原始措施: {original_measure.get('measure_text', '')}")
+    print(f"生成修正措施请求 - 参考案例: {reference_case.get('case_id', '')}")
+    
+    result = generate_remedy_measure(original_measure, reference_case, event_features)
+    
+    if result:
+        return jsonify({
+            'success': True,
+            'measure': result
+        })
+    else:
+        return jsonify({
+            'success': False,
+            'error': '无法生成修正措施'
+        })
+
 @app.route('/api/org/check', methods=['POST'])
 def check_org():
     from utils.llm_client import check_org_violation
     
     data = request.json
     measures = data.get('measures', [])
+    
     legal_rules = load_json_file('LegalRule.json')
+    
+    # 测试：直接返回legal_rules的内容
+    if len(measures) > 0 and measures[0].get('measure_text') == 'test_debug':
+        return jsonify({'legal_rules': legal_rules})
     
     results = []
     for measure in measures:
@@ -194,17 +256,33 @@ def check_org():
             handling = '校验通过'
         
         reasoning_chain = ''
+        llm_reasoning = check_result.get('reasoning', '')
         rule_name = ''
         rule_type = ''
+        violation_action = ''
+        
+        # 获取候选规则（通过阶段一校验的规则）
+        candidate_rules = check_result.get('candidate_rules', [])
+        
+        # 如果有匹配规则（LLM判定触发），使用匹配规则构建推理链路
         if matched_rules:
             rule_name = matched_rules[0]['rule_name']
             rule_type = matched_rules[0]['rule_type']
+            violation_action = matched_rules[0].get('violation_action', '')
             reasoning_chain = f"行动类型: {matched_rules[0]['action_type']} → 规则领域: {matched_rules[0]['rule_domain']} → 法规名称: {matched_rules[0]['act']} → 具体法条: {matched_rules[0]['section']}"
+        # 如果没有匹配规则但有候选规则（通过阶段一但LLM判定未触发），使用第一个候选规则构建推理链路
+        elif candidate_rules:
+            rule_name = candidate_rules[0]['rule_name']
+            rule_type = candidate_rules[0]['rule_type']
+            violation_action = candidate_rules[0].get('violation_action', '')
+            reasoning_chain = f"行动类型: {candidate_rules[0]['action_type']} → 规则领域: {candidate_rules[0]['rule_domain']} → 法规名称: {candidate_rules[0]['act']} → 具体法条: {candidate_rules[0]['section']}"
         
         results.append({
             'measure_name': measure.get('measure_text', ''),
             'rule_name': rule_name,
+            'violation_action': violation_action,
             'reasoning_chain': reasoning_chain,
+            'llm_reasoning': llm_reasoning,
             'rule_type': rule_type,
             'handling': handling,
             'matched_rules': matched_rules
@@ -247,4 +325,4 @@ def index():
     return send_from_directory('../frontend', 'index.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5001, debug=True)
+    app.run(host='0.0.0.0', port=5001, debug=False)

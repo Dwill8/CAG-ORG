@@ -1,548 +1,302 @@
 [
-  {
-    "case_id": "USA-202108-GP01",
-    "case_label": "Case01｜USA-202108-GP01",
-    "case_category": "地缘政治",
-    "case_type": "危机处置 + 地缘冲突（阿富汗撤军与喀布尔撤离）",
-    "state_subject": "USA",
-    "trigger_event": "2021年8月，塔利班快速攻占喀布尔，美国启动大规模撤侨与盟友人员转移。",
-    "event_date": "2021年8月",
-    "background": "美国结束二十年阿富汗战争，国内反战情绪强；阿富汗政府迅速崩溃，机场成为唯一撤离通道。",
-    "stakeholders": [
-      "美国",
-      "塔利班",
-      "阿富汗前政府",
-      "北约盟友",
-      "美国公民",
-      "阿富汗合作人员"
-    ],
-    "strategic_goal": "结束长期地面战争，降低海外驻军成本，撤出美国人员和核心盟友人员，避免重新陷入大规模作战。",
-    "decision_measures": [
-      "执行撤军时间表",
-      "向喀布尔机场临时增派部队保障撤离",
-      "启动Operation Allies Refuge",
-      "与塔利班进行有限安全协调",
-      "使用军机和民航资源转运人员"
-    ],
-    "constraints": [
-      "RL-US-001",
-      "BL-US-002",
-      "BL-US-004",
-      "SR-US-001"
-    ],
-    "outcome": "美国完成撤军并转移大量人员，但机场混乱、恐袭伤亡和盟友信任受损明显。",
-    "key_lesson": [
-      "结束长期战争符合低成本战略",
-      "但撤离窗口",
-      "情报判断",
-      "盟友安置和机场安全必须前置"
-    ],
-    "similar_tag": [
-      "撤军",
-      "非战斗撤离",
-      "盟友安置",
-      "长期战争收缩",
-      "失败复盘"
-    ],
-    "fail_tag": true,
-    "source_note": "U.S. State Department Afghanistan After Action Review；White House Remarks on Afghanistan Evacuation, Aug. 2021",
-    "source_url": [
-      "U.S. State Department Afghanistan After Action Review",
-      "White House Remarks on Afghanistan Evacuation, Aug. 2021"
-    ],
-    "source_type": "公开来源说明",
-    "source_date": "",
-    "verification_status": "pending"
-  },
-  {
-    "case_id": "USA-202109-GP02",
-    "case_label": "Case02｜USA-202109-GP02",
-    "case_category": "地缘政治",
-    "case_type": "外交博弈 + 科技竞争 + 地缘冲突（AUKUS安全伙伴关系）",
-    "state_subject": "USA",
-    "trigger_event": "2021年9月，美国、英国、澳大利亚宣布建立AUKUS，推进核潜艇和高端军事技术合作。",
-    "event_date": "2021年9月",
-    "background": "印太竞争加剧，美国强化小多边机制；澳大利亚调整国防路线，法国潜艇合同被替代并引发盟友摩擦。",
-    "stakeholders": [
-      "美国",
-      "英国",
-      "澳大利亚",
-      "中国",
-      "法国",
-      "印太盟友"
-    ],
-    "strategic_goal": "强化印太前沿威慑，以盟友承担成本方式提升地区军事技术能力，遏制中国海上影响力。",
-    "decision_measures": [
-      "建立AUKUS框架",
-      "支持澳大利亚获得核动力潜艇能力",
-      "推进网络",
-      "AI",
-      "量子",
-      "海底能力等高端技术合作",
-      "通过外交修复与法国关系"
-    ],
-    "constraints": [
-      "BL-US-001",
-      "BL-US-002",
-      "SR-US-001"
-    ],
-    "outcome": "美国强化印太安全网络，但短期冲击美法关系，地区军备竞争压力上升。",
-    "key_lesson": [
-      "小多边高技术联盟可放大美国战略影响",
-      "但需同步管理盟友间利益损失"
-    ],
-    "similar_tag": [
-      "AUKUS",
-      "印太",
-      "核潜艇",
-      "技术联盟",
-      "盟友分摊"
-    ],
-    "fail_tag": false,
-    "source_note": "White House Joint Leaders Statement on AUKUS；U.S. Department of Defense AUKUS",
-    "source_url": [
-      "White House Joint Leaders Statement on AUKUS",
-      "U.S. Department of Defense AUKUS"
-    ],
-    "source_type": "公开来源说明",
-    "source_date": "",
-    "verification_status": "pending"
-  },
-  {
-    "case_id": "USA-202202-GP03",
-    "case_label": "Case03｜USA-202202-GP03",
-    "case_category": "地缘政治",
-    "case_type": "地缘冲突 + 经济贸易 + 外交博弈（俄乌冲突后的美国综合应对）",
-    "state_subject": "USA",
-    "trigger_event": "2022年2月，俄罗斯对乌克兰发动全面军事行动。",
-    "event_date": "2022年2月",
-    "background": "欧洲安全秩序剧烈变化；美国国内不愿直接与俄罗斯开战，但需维护北约信誉和对俄威慑。",
-    "stakeholders": [
-      "美国",
-      "俄罗斯",
-      "乌克兰",
-      "北约",
-      "欧盟",
-      "G7",
-      "全球能源市场"
-    ],
-    "strategic_goal": "削弱俄罗斯战争能力，维护北约团结，避免美俄直接战争，以援助和制裁方式维持乌克兰抵抗。",
-    "decision_measures": [
-      "对俄实施金融",
-      "能源",
-      "技术和个人制裁",
-      "向乌克兰提供军事",
-      "情报和财政援助",
-      "强化北约东翼部署",
-      "推动G7和欧盟协调"
-    ],
-    "constraints": [
-      "RL-US-001",
-      "BL-US-001",
-      "BL-US-002",
-      "BL-US-003",
-      "SR-US-001"
-    ],
-    "outcome": "俄罗斯承受长期消耗，北约凝聚力增强；但战争长期化、财政负担和升级风险持续存在。",
-    "key_lesson": [
-      "对核大国宜采用“援助代理方 + 制裁削弱 + 联盟威慑”",
-      "避免直接参战"
-    ],
-    "similar_tag": [
-      "俄乌冲突",
-      "代理支持",
-      "对俄制裁",
-      "北约东翼",
-      "核大国规避"
-    ],
-    "fail_tag": false,
-    "source_note": "White House Fact Sheet on Costs Imposed on Russia, Feb. 24 2022；U.S. Department of State Ukraine and Russia",
-    "source_url": [
-      "White House Fact Sheet on Costs Imposed on Russia, Feb. 24 2022",
-      "U.S. Department of State Ukraine and Russia"
-    ],
-    "source_type": "公开来源说明",
-    "source_date": "",
-    "verification_status": "pending"
-  },
-  {
-    "case_id": "USA-202208-GP04",
-    "case_label": "Case04｜USA-202208-GP04",
-    "case_category": "地缘政治",
-    "case_type": "危机处置 + 地缘冲突（佩洛西访台后的台海危机）",
-    "state_subject": "USA",
-    "trigger_event": "2022年8月，美国众议长佩洛西访问台湾后，中国在台海周边举行大规模军事演训。",
-    "event_date": "2022年8月",
-    "background": "中美战略竞争加剧；台湾问题高度敏感，美国需同时维持对台支持、盟友信心和危机管控。",
-    "stakeholders": [
-      "美国",
-      "中国",
-      "台湾地区",
-      "日本",
-      "印太盟友"
-    ],
-    "strategic_goal": "维持美国在印太信誉，避免被迫后退，同时避免中美军事冲突失控。",
-    "decision_measures": [
-      "公开重申美国政策立场",
-      "保持印太军事存在",
-      "安排美舰通过台湾海峡",
-      "与盟友沟通稳定局势",
-      "避免直接军事升级"
-    ],
-    "constraints": [
-      "BL-US-001",
-      "BL-US-002",
-      "SR-US-001"
-    ],
-    "outcome": "台海紧张升级但未爆发直接冲突；中国军事活动常态化，美国维持地区存在。",
-    "key_lesson": [
-      "高敏感主权议题中",
-      "象征性支持必须配套军事风险管控和盟友沟通"
-    ],
-    "similar_tag": [
-      "台海",
-      "危机管控",
-      "航行行动",
-      "印太威慑",
-      "中美竞争"
-    ],
-    "fail_tag": false,
-    "source_note": "Speaker Pelosi Statement on Congressional Delegation to Taiwan；U.S. Seventh Fleet Taiwan Strait Transit, Aug. 2022",
-    "source_url": [
-      "Speaker Pelosi Statement on Congressional Delegation to Taiwan",
-      "U.S. Seventh Fleet Taiwan Strait Transit, Aug. 2022"
-    ],
-    "source_type": "公开来源说明",
-    "source_date": "",
-    "verification_status": "pending"
-  },
-  {
-    "case_id": "USA-202302-GP05",
-    "case_label": "Case05｜USA-202302-GP05",
-    "case_category": "地缘政治",
-    "case_type": "地缘冲突 + 外交博弈（美菲EDCA基地合作扩展）",
-    "state_subject": "USA",
-    "trigger_event": "2023年2月，美菲宣布新增4个EDCA合作地点，2023年4月公布具体地点。",
-    "event_date": "2023年2月",
-    "background": "南海和台海风险上升；菲律宾在马科斯政府下重新强化与美国安全合作。",
-    "stakeholders": [
-      "美国",
-      "菲律宾",
-      "中国",
-      "日本",
-      "澳大利亚",
-      "东盟"
-    ],
-    "strategic_goal": "恢复和扩展美国在第一岛链的前沿支点，提升台海和南海危机响应能力，由盟友承担部分地理和政治成本。",
-    "decision_measures": [
-      "新增EDCA合作地点",
-      "扩大联合演训",
-      "支持菲律宾海上安全能力",
-      "加强美日菲安全协调"
-    ],
-    "constraints": [
-      "BL-US-001",
-      "BL-US-002",
-      "SR-US-001"
-    ],
-    "outcome": "美国印太前沿部署弹性增强；菲律宾国内和地区对“卷入大国冲突”的担忧上升。",
-    "key_lesson": [
-      "前沿基地网络能提升威慑",
-      "但需管理东道国国内政治和升级暴露风险"
-    ],
-    "similar_tag": [
-      "菲律宾",
-      "EDCA",
-      "南海",
-      "台海",
-      "前沿部署",
-      "盟友分摊"
-    ],
-    "fail_tag": false,
-    "source_note": "White House Fact Sheet on U.S.-Philippines EDCA New Sites；U.S. Department of Defense EDCA Announcement",
-    "source_url": [
-      "White House Fact Sheet on U.S.-Philippines EDCA New Sites",
-      "U.S. Department of Defense EDCA Announcement"
-    ],
-    "source_type": "公开来源说明",
-    "source_date": "",
-    "verification_status": "pending"
-  },
-  {
-    "case_id": "USA-202304-GP06",
-    "case_label": "Case06｜USA-202304-GP06",
-    "case_category": "地缘政治",
-    "case_type": "外交博弈 + 地缘冲突（芬兰、瑞典加入北约）",
-    "state_subject": "USA",
-    "trigger_event": "2022年5月芬兰、瑞典申请加入北约；芬兰2023年4月入约，瑞典2024年3月入约。",
-    "event_date": "2022年5月",
-    "background": "俄罗斯对乌行动改变北欧安全认知；美国希望强化欧洲威慑，但避免独自增加欧洲防务成本。",
-    "stakeholders": [
-      "美国",
-      "芬兰",
-      "瑞典",
-      "北约",
-      "俄罗斯",
-      "土耳其",
-      "匈牙利"
-    ],
-    "strategic_goal": "扩大北约防御纵深，强化欧洲北翼威慑，同时推动欧洲盟友承担更多防务责任。",
-    "decision_measures": [
-      "支持北约开放政策",
-      "推动盟友批准入约",
-      "协调土耳其",
-      "匈牙利等成员国关切",
-      "组织北欧防务整合和联合演训"
-    ],
-    "constraints": [
-      "BL-US-001",
-      "BL-US-002",
-      "SR-US-001"
-    ],
-    "outcome": "北约北翼显著增强，波罗的海安全结构改变；俄罗斯与北约边界扩大，长期对抗风险上升。",
-    "key_lesson": [
-      "对手行动可能触发联盟反向扩张",
-      "制度吸纳是低成本扩大战略纵深的工具"
-    ],
-    "similar_tag": [
-      "北约扩员",
-      "芬兰",
-      "瑞典",
-      "俄罗斯",
-      "联盟扩张",
-      "欧洲安全"
-    ],
-    "fail_tag": false,
-    "source_note": "NATO Member Countries；White House Statement on Finland Joining NATO",
-    "source_url": [
-      "NATO Member Countries",
-      "White House Statement on Finland Joining NATO"
-    ],
-    "source_type": "公开来源说明",
-    "source_date": "",
-    "verification_status": "pending"
-  },
-  {
-    "case_id": "USA-202310-GP07",
-    "case_label": "Case07｜USA-202310-GP07",
-    "case_category": "地缘政治",
-    "case_type": "地缘冲突 + 危机处置（哈马斯袭击以色列与加沙战争）",
-    "state_subject": "USA",
-    "trigger_event": "2023年10月7日，哈马斯对以色列发动大规模袭击，以色列随后在加沙展开军事行动。",
-    "event_date": "2023年10月7日",
-    "background": "美国长期支持以色列，但加沙人道危机引发全球舆论和美国国内政治压力；中东局势外溢至红海、黎巴嫩、伊朗方向。",
-    "stakeholders": [
-      "美国",
-      "以色列",
-      "哈马斯",
-      "巴勒斯坦平民",
-      "埃及",
-      "卡塔尔",
-      "伊朗",
-      "联合国",
-      "全球舆论"
-    ],
-    "strategic_goal": "支持以色列安全，营救人质，防止地区战争扩大，同时控制人道和舆论代价。",
-    "decision_measures": [
-      "向以色列提供军事和情报支持",
-      "派遣航母打击群威慑外部势力",
-      "推动人道援助通道和临时停火",
-      "通过卡塔尔",
-      "埃及等进行人质谈判"
-    ],
-    "constraints": [
-      "BL-US-001",
-      "BL-US-003",
-      "BL-US-004",
-      "SR-US-001"
-    ],
-    "outcome": "美国维持对以色列支持并压制部分外溢风险，但国际舆论、人道压力和国内政治撕裂加剧。",
-    "key_lesson": [
-      "盟友安全承诺必须与人道底线和地区升级控制同步",
-      "否则战略合法性成本迅速上升"
-    ],
-    "similar_tag": [
-      "以色列",
-      "加沙",
-      "人质危机",
-      "航母威慑",
-      "人道援助",
-      "舆论压力"
-    ],
-    "fail_tag": false,
-    "source_note": "White House Statement on Hamas Attacks, Oct. 7 2023；U.S. Department of State Israel-Hamas Conflict",
-    "source_url": [
-      "White House Statement on Hamas Attacks, Oct. 7 2023",
-      "U.S. Department of State Israel-Hamas Conflict"
-    ],
-    "source_type": "公开来源说明",
-    "source_date": "",
-    "verification_status": "pending"
-  },
-  {
-    "case_id": "USA-202312-GP08",
-    "case_label": "Case08｜USA-202312-GP08",
-    "case_category": "地缘政治",
-    "case_type": "危机处置 + 地缘冲突（红海航运危机与Operation Prosperity Guardian）",
-    "state_subject": "USA",
-    "trigger_event": "2023年12月，胡塞武装持续袭击红海商业航运，美国宣布组建多国海上安全行动。",
-    "event_date": "2023年12月",
-    "background": "加沙战争外溢至红海；红海—苏伊士航线关系全球贸易和能源运输，美国需保护航道但避免深陷也门战争。",
-    "stakeholders": [
-      "美国",
-      "胡塞武装",
-      "英国",
-      "巴林",
-      "多国海军",
-      "以色列",
-      "航运企业",
-      "全球贸易市场"
-    ],
-    "strategic_goal": "保护红海航运自由，威慑胡塞袭击，维持能源和贸易通道，不扩大为大规模地面介入。",
-    "decision_measures": [
-      "建立Operation Prosperity Guardian",
-      "部署海军护航并拦截无人机",
-      "导弹",
-      "对胡塞军事目标实施有限打击",
-      "联合盟友分担海上安全任务"
-    ],
-    "constraints": [
-      "RL-US-001",
-      "BL-US-002",
-      "BL-US-003",
-      "BL-US-004",
-      "SR-US-001"
-    ],
-    "outcome": "部分航运安全得到保护，但胡塞能力和袭击意愿未被彻底消除，航运绕行和保险成本持续。",
-    "key_lesson": [
-      "海上通道危机宜采用“护航 + 精准打击 + 多国分摊”",
-      "避免转化为陆上战争"
-    ],
-    "similar_tag": [
-      "红海",
-      "胡塞",
-      "航运通道",
-      "护航",
-      "有限打击",
-      "能源贸易"
-    ],
-    "fail_tag": false,
-    "source_note": "U.S. Department of Defense: Operation Prosperity Guardian；U.S. Central Command Red Sea Updates",
-    "source_url": [
-      "U.S. Department of Defense: Operation Prosperity Guardian",
-      "U.S. Central Command Red Sea Updates"
-    ],
-    "source_type": "公开来源说明",
-    "source_date": "",
-    "verification_status": "pending"
-  },
-  {
-    "case_id": "USA-202404-GP09",
-    "case_label": "Case09｜USA-202404-GP09",
-    "case_category": "地缘政治",
-    "case_type": "危机处置 + 地缘冲突（伊朗直接攻击以色列后的美国防空支援）",
-    "state_subject": "USA",
-    "trigger_event": "2024年4月13日至14日，伊朗向以色列发射大规模无人机、巡航导弹和弹道导弹。",
-    "event_date": "2024年4月13日",
-    "background": "以色列打击伊朗驻叙外交设施后，伊朗首次对以色列发动大规模直接攻击；美国需保护以色列但避免美伊全面战争。",
-    "stakeholders": [
-      "美国",
-      "以色列",
-      "伊朗",
-      "英国",
-      "法国",
-      "约旦",
-      "海湾国家",
-      "全球能源市场"
-    ],
-    "strategic_goal": "协助以色列拦截来袭武器，防止以色列遭受重大损失，压低以伊升级烈度，维护中东能源通道稳定。",
-    "decision_measures": [
-      "CENTCOM协调区域防空",
-      "美军飞机和舰艇拦截伊朗无人机与导弹",
-      "与英法约旦等协同防御",
-      "战后公开支持以色列同时呼吁避免进一步升级"
-    ],
-    "constraints": [
-      "BL-US-001",
-      "BL-US-003",
-      "BL-US-004",
-      "SR-US-001"
-    ],
-    "outcome": "大多数来袭武器被拦截，以色列损失有限；美伊未直接进入全面战争，但地区对抗显性化。",
-    "key_lesson": [
-      "面对地区强国导弹袭击",
-      "优先采用“联合防空 + 危机降级外交”",
-      "比直接报复更能控制升级"
-    ],
-    "similar_tag": [
-      "伊朗",
-      "以色列",
-      "导弹袭击",
-      "防空拦截",
-      "地区升级",
-      "能源通道"
-    ],
-    "fail_tag": false,
-    "source_note": "CENTCOM Statement on Iran Attack, Apr. 2024；White House Statement on Iran Attack Against Israel",
-    "source_url": [
-      "CENTCOM Statement on Iran Attack, Apr. 2024",
-      "White House Statement on Iran Attack Against Israel"
-    ],
-    "source_type": "公开来源说明",
-    "source_date": "",
-    "verification_status": "pending"
-  },
-  {
-    "case_id": "USA-202407-GP10",
-    "case_label": "Case10｜USA-202407-GP10",
-    "case_category": "地缘政治",
-    "case_type": "危机处置 + 外交博弈（尼日尔政变后美军撤出）",
-    "state_subject": "USA",
-    "trigger_event": "2023年7月尼日尔发生政变，随后军政府要求外国军队撤离；美国于2024年完成从尼日尔撤军安排。",
-    "event_date": "2023年7月",
-    "background": "尼日尔曾是美国在萨赫勒反恐和无人机行动的重要支点；政变后反西方情绪上升，俄罗斯影响力扩大。",
-    "stakeholders": [
-      "美国",
-      "尼日尔军政府",
-      "法国",
-      "俄罗斯",
-      "萨赫勒地区国家",
-      "非洲联盟"
-    ],
-    "strategic_goal": "降低人员暴露风险，避免与当地军政府直接冲突，保留地区反恐和外交再布局空间。",
-    "decision_measures": [
-      "暂停部分安全合作",
-      "与尼日尔军政府谈判撤军路径",
-      "关闭或移交相关基地安排",
-      "寻求在西非其他国家重新布局反恐合作"
-    ],
-    "constraints": [
-      "RL-US-001",
-      "BL-US-002",
-      "BL-US-004",
-      "SR-US-001"
-    ],
-    "outcome": "美国降低了在尼日尔的军事暴露，但萨赫勒反恐监控能力受损，俄西影响力竞争加剧。",
-    "key_lesson": [
-      "在东道国合法性变化时",
-      "强留基地成本高",
-      "应提前准备替代支点和区域冗余布局"
-    ],
-    "similar_tag": [
-      "尼日尔",
-      "政变",
-      "基地撤离",
-      "反恐支点",
-      "非洲影响力竞争"
-    ],
-    "fail_tag": false,
-    "source_note": "U.S. Africa Command Statement on Niger Withdrawal；U.S. Department of State Niger Country Page",
-    "source_url": [
-      "U.S. Africa Command Statement on Niger Withdrawal",
-      "U.S. Department of State Niger Country Page"
-    ],
-    "source_type": "公开来源说明",
-    "source_date": "",
-    "verification_status": "pending"
-  }
+    {
+        "case_id": "USA-202501-GP01",
+        "case_label": "Case01｜USA-202501-GP01",
+        "case_category": "地缘政治",
+        "case_type": "地缘冲突 + 危机处置（委内瑞拉跨境特种抓捕与加勒比军事施压）",
+        "state_subject": "USA",
+        "trigger_event": "2025年1月，特朗普政府认定委内瑞拉毒品走私、反美，启动加勒比大规模军事集结，派遣三角洲特种部队跨境抓捕马杜罗夫妇。",
+        "event_date": "2025年1月",
+        "background": "特朗普推行新版门罗主义，强化西半球绝对主导；委内瑞拉石油资源战略价值高，拉美左翼政权联动挑战美国区域霸权；国内要求阻断芬太尼跨境走私通道。",
+        "stakeholders": [
+            "美国",
+            "委内瑞拉马杜罗政府",
+            "拉美左翼国家",
+            "北约盟友",
+            "联合国",
+            "加勒比地区国家"
+        ],
+        "strategic_goal": "推翻委内瑞拉反美政权，控制拉美石油资源，震慑拉美左翼势力，巩固美国西半球单边主导权，阻断芬太尼跨境走私通道。",
+        "decision_measures": [
+            "加勒比海域开展冷战后大规模军事集结",
+            "派遣三角洲特种部队跨境抓捕委内瑞拉总统夫妇",
+            "冻结委内瑞拉全部海外主权资产",
+            "对支持委内瑞拉的国家加征惩罚性关税",
+            "推动联合国谴责委内瑞拉毒品恐怖主义"
+        ],
+        "constraints": ["US_RED_101", "US_RED_106", "US_BOT_103"],
+        "outcome": "成功将马杜罗押至美国起诉，但拉美国家集体反美情绪爆发，联合国多国谴责侵犯主权，区域反美同盟加速形成，石油供应链短期剧烈震荡。",
+        "key_lesson": [
+            "单边跨境军事行动短期可达成战术目标",
+            "未经安理会授权武力使用严重削弱国际合法性",
+            "无差别全面制裁易引发区域集体反制",
+            "区域干预需前置能源替代预案降低通胀冲击"
+        ],
+        "similar_tag": [
+            "西半球干预",
+            "特种跨境抓捕",
+            "区域军事集结",
+            "资源博弈",
+            "单边全面制裁"
+        ],
+        "fail_tag": true,
+        "source_note": "White House Southern Spear Operation After Action Report；State Department Latin America Policy Review 2025",
+        "source_url": [
+            "White House Southern Spear Operation After Action Report",
+            "State Department Latin America Policy Review 2025"
+        ],
+        "source_type": "公开来源说明",
+        "source_date": "2025-03",
+        "verification_status": "pending"
+    },
+    {
+        "case_id": "USA-202506-GP01",
+        "case_label": "Case02｜USA-202506-GP01",
+        "case_category": "地缘政治",
+        "case_type": "地缘冲突 + 中东危机处置（伊朗核设施空袭与霍尔木兹海峡封锁施压）",
+        "state_subject": "USA",
+        "trigger_event": "2025年6月美军隐身战机空袭伊朗浓缩铀核设施，海军封锁霍尔木兹海峡，实施覆盖伊朗全领域无差别制裁。",
+        "event_date": "2025年6月",
+        "background": "伊朗浓缩铀丰度持续提升，特朗普废弃多边伊核协议，依靠单边军事威慑控制中东石油通道，遏制伊朗区域扩张。",
+        "stakeholders": [
+            "美国国防部",
+            "伊朗革命卫队",
+            "沙特、阿联酋",
+            "欧盟",
+            "全球石油贸易商",
+            "国际原子能机构"
+        ],
+        "strategic_goal": "延缓伊朗核研发进度，掌控霍尔木兹海峡航运，逼迫伊朗接受单边核约束，巩固美国中东霸权。",
+        "decision_measures": [
+            "隐身战机投放钻地弹定点摧毁伊朗核设施",
+            "海军舰艇封锁霍尔木兹海峡民用油轮通行",
+            "实施覆盖民生、能源全领域无差别制裁",
+            "冻结伊朗海外能源主权资产",
+            "增派双航母战斗群常驻波斯湾"
+        ],
+        "constraints": ["US_RED_106", "US_BOT_102", "US_BOT_103"],
+        "outcome": "短期延缓核计划推进，全球油价暴涨，欧盟拒绝配合封锁，伊朗联合中俄搭建替代能源贸易通道，单边制裁长期失效。",
+        "key_lesson": [
+            "封锁国际战略水道会反噬本国通胀",
+            "无差别民生制裁削弱美国道义优势",
+            "无安理会授权军事打击推动对手抱团",
+            "单边核施压难以替代多边约束框架"
+        ],
+        "similar_tag": [
+            "中东核博弈",
+            "海峡封锁",
+            "定点军事打击",
+            "全域经济制裁",
+            "能源地缘竞争"
+        ],
+        "fail_tag": true,
+        "source_note": "Pentagon Iran Strike Post-Action Review；State Department Middle East Security Assessment 2025",
+        "source_url": [
+            "Pentagon Iran Strike Post-Action Review",
+            "State Department Middle East Security Assessment 2025"
+        ],
+        "source_type": "公开来源说明",
+        "source_date": "2025-09",
+        "verification_status": "pending"
+    },
+    {
+        "case_id": "USA-202503-GP01",
+        "case_label": "Case03｜USA-202503-GP01",
+        "case_category": "地缘政治",
+        "case_type": "北极地缘博弈 + 盟友外交危机（格陵兰主权争夺与对丹麦惩罚性关税威慑）",
+        "state_subject": "USA",
+        "trigger_event": "2025年3月特朗普公开提出收购格陵兰岛主权，对丹麦加征高额惩罚性关税，胁迫扩大美军北极基地权限。",
+        "event_date": "2025年3月",
+        "background": "北极航道、矿产、太空预警战略价值飙升，特朗普以关税作为胁迫工具，绕过北约协商单边谋求北极主导权。",
+        "stakeholders": [
+            "美国国防部",
+            "丹麦政府",
+            "格陵兰自治政府",
+            "欧盟",
+            "北约全体盟国",
+            "俄罗斯北极驻军"
+        ],
+        "strategic_goal": "获取格陵兰太空监测与矿产资源，扩大北极军事部署，以关税胁迫逼迫丹麦让步，建立美国北极单边控制权。",
+        "decision_measures": [
+            "公开提出收购格陵兰主权领土诉求",
+            "对丹麦进口商品加征高额惩罚性关税",
+            "单方面推进皮图菲克基地扩建计划",
+            "暂停美丹常规防务合作施压",
+            "绕开北约单独与格陵兰自治政府经贸谈判"
+        ],
+        "constraints": ["US_BOT_105"],
+        "outcome": "丹麦与欧盟统一强硬反制关税威胁，美国最终撤销加征计划，北约内部信任裂痕扩大，北极多边协作机制停滞。",
+        "key_lesson": [
+            "对北约盟友单边高额关税损害联盟根基",
+            "领土主权诉求极易激发盟国集体对抗",
+            "北极博弈需依托北约多边协商而非单边胁迫",
+            "经济胁迫工具不适用于主权领土谈判"
+        ],
+        "similar_tag": [
+            "北极地缘争夺",
+            "关税外交胁迫",
+            "北约盟友分歧",
+            "海外基地扩张",
+            "主权领土博弈"
+        ],
+        "fail_tag": true,
+        "source_note": "White House Greenland Policy Statement；USTR EU Tariff Countermeasure Review 2025",
+        "source_url": [
+            "White House Greenland Policy Statement",
+            "USTR EU Tariff Countermeasure Review 2025"
+        ],
+        "source_type": "公开来源说明",
+        "source_date": "2025-04",
+        "verification_status": "pending"
+    },
+    {
+        "case_id": "USA-202602-GP01",
+        "case_label": "Case04｜USA-202602-GP01",
+        "case_category": "地缘政治",
+        "case_type": "欧洲地缘调停 + 冲突管控（G7俄乌和平斡旋与对乌军售援助调整）",
+        "state_subject": "USA",
+        "trigger_event": "2026年2月特朗普在G7推出单边俄乌和平框架，压缩无偿对乌援助，计划一次性大额军售且未提前国会报备。",
+        "event_date": "2026年2月",
+        "background": "俄乌长期消耗推高全球粮价，特朗普希望削减财政负担，主导欧洲安全议程，通过大额军售获取军工收益。",
+        "stakeholders": [
+            "美国白宫",
+            "俄罗斯",
+            "乌克兰",
+            "欧盟、北约各国",
+            "美国军工复合体",
+            "全球粮食出口国"
+        ],
+        "strategic_goal": "压缩美国援乌财政支出，主导俄乌和平谈判，扩大对乌军售规模，削弱欧洲独立安全话语权。",
+        "decision_measures": [
+            "元首双边搭建美俄、美乌单独沟通渠道",
+            "推出美国单边俄乌和平框架草案",
+            "将无偿援助转为大额有偿军售项目",
+            "未提前向国会报备单笔超5000万美金军售计划",
+            "施压欧洲各国加大自身对乌防务投入"
+        ],
+        "constraints": ["US_BOT_108"],
+        "outcome": "俄乌领土、安全核心分歧无法弥合，停火谈判破裂；欧洲不满美国单方面调整援乌政策，北约防务共识弱化。",
+        "key_lesson": [
+            "大额对外军售必须前置国会审议流程",
+            "单方面压缩对乌援助难以倒逼俄方让步",
+            "欧美对俄战略底线存在显著分歧",
+            "缺少安全担保的和平框架无法落地"
+        ],
+        "similar_tag": [
+            "俄乌调停",
+            "北约盟友博弈",
+            "对外军售",
+            "冲突和平谈判",
+            "欧洲安全重塑"
+        ],
+        "fail_tag": true,
+        "source_note": "State Department Ukraine Negotiation Record；White House Europe Security Policy Report 2026",
+        "source_url": [
+            "State Department Ukraine Negotiation Record",
+            "White House Europe Security Policy Report 2026"
+        ],
+        "source_type": "公开来源说明",
+        "source_date": "2026-02",
+        "verification_status": "pending"
+    },
+    {
+        "case_id": "USA-202512-GP01",
+        "case_label": "Case05｜USA-202512-GP01",
+        "case_category": "地缘政治",
+        "case_type": "中东地缘经济 + 科技地缘竞争（中东AI算力联盟与过度域外出口管制）",
+        "state_subject": "USA",
+        "trigger_event": "2025年12月美沙、美阿签署AI算力排他合作协议，依托外国直接产品规则限制第三方民用芯片供应链，过度扩张域外管辖。",
+        "event_date": "2025年12月",
+        "background": "AI算力成为大国竞争核心资产，中东拥有能源与资本优势，特朗普试图搭建排他算力联盟，阻断对手获取全球芯片资源。",
+        "stakeholders": [
+            "美国商务部BIS",
+            "沙特阿拉伯",
+            "阿联酋",
+            "全球半导体厂商",
+            "中国科技实体",
+            "区域中小中东国家"
+        ],
+        "strategic_goal": "构建美国主导中东AI算力生态圈，垄断区域高端芯片供给，通过域外管制切断竞争对手民用芯片供应链。",
+        "decision_measures": [
+            "与阿联酋共建5GW排他性AI算力园区",
+            "对第三方民用芯片实施过度域外管辖管制",
+            "定向向中东盟友豁免高端AI芯片出口许可",
+            "限制中东企业采购非美系民用算力设备",
+            "出台配套芯片产业补贴法案"
+        ],
+        "constraints": ["US_BOT_110"],
+        "outcome": "短期占据中东AI市场，但全球民用芯片供应链割裂，中东中小国家寻求多元芯片采购渠道，管制长期损害美国半导体企业海外营收。",
+        "key_lesson": [
+            "过度域外出口管制会撕裂全球民用供应链",
+            "区域技术联盟无法完全隔绝第三方合作",
+            "定向芯片豁免存在盟友利益平衡难题",
+            "民用与军用芯片管制需分层区分"
+        ],
+        "similar_tag": [
+            "AI算力地缘竞争",
+            "域外出口管制",
+            "中东产业外交",
+            "芯片友岸外包",
+            "区域技术排他联盟"
+        ],
+        "fail_tag": false,
+        "source_note": "White House Stargate AI Initiative Report；U.S.-UAE AI Partnership Joint Statement 2025",
+        "source_url": [
+            "White House Stargate AI Initiative Report",
+            "U.S.-UAE AI Partnership Joint Statement 2025"
+        ],
+        "source_type": "公开来源说明",
+        "source_date": "2025-12",
+        "verification_status": "pending"
+    },
+    {
+        "case_id": "USA-202504-GP01",
+        "case_label": "Case06｜USA-202504-GP01",
+        "case_category": "地缘政治",
+        "case_type": "全球规则地缘博弈（单边制裁ICC司法人员维护美军行动豁免）",
+        "state_subject": "USA",
+        "trigger_event": "2025年4月ICC拟调查美军海外战争罪行，特朗普签署行政令制裁ICC法官、检察官，切断美国全部配套资金。",
+        "event_date": "2025年4月",
+        "background": "ICC长期追踪美国海外军事行动战争线索，特朗普政府拒绝接受域外国际司法管辖，以单边制裁工具维护美军海外行动自由。",
+        "stakeholders": [
+            "美国白宫、司法部",
+            "国际刑事法院ICC",
+            "欧盟成员国",
+            "全球人权组织",
+            "联合国安理会",
+            "美国海外驻军"
+        ],
+        "strategic_goal": "阻止ICC涉美战争罪调查，确立美军海外行动司法豁免权，削弱ICC全球管辖权，震慑其他国际司法机构。",
+        "decision_measures": [
+            "行政令制裁ICC法官、检察官个人资产与入境权限",
+            "全面切断美国对ICC自愿资金捐助",
+            "施压北约盟友停止配合ICC涉美调查",
+            "安理会否决涉美司法相关决议",
+            "立法限制本国公民配合ICC司法传唤"
+        ],
+        "constraints": ["US_BOT_105"],
+        "outcome": "短期阻滞ICC调查推进，但欧盟、人权组织集体谴责单边霸凌，美国人权外交叙事彻底受损，多边国际规则体系公信力下滑。",
+        "key_lesson": [
+            "对多边机构与盟友单边制裁损伤规则话语权",
+            "短期司法庇护存在长期外交代价",
+            "欧盟具备统一对抗美国单边措施的能力",
+            "单边司法豁免削弱美国全球规则主导地位"
+        ],
+        "similar_tag": [
+            "国际司法博弈",
+            "单边外交制裁",
+            "多边机制对抗",
+            "海外驻军豁免权",
+            "全球规则竞争"
+        ],
+        "fail_tag": true,
+        "source_note": "White House ICC Sanctions Executive Order Brief；State Department International Law Impact Report 2025",
+        "source_url": [
+            "White House ICC Sanctions Executive Order Brief",
+            "State Department International Law Impact Report 2025"
+        ],
+        "source_type": "公开来源说明",
+        "source_date": "2025-04",
+        "verification_status": "pending"
+    }
 ]
